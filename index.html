@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Bootstrap CSS-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="static/css/index.css">
+  <title>Αρχική</title>
+</head>
+<body>
+  <!--Navbar-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <a class="navbar-brand" href="index.html"><img class="logo" src="static/img/gov.png"> Vaccine-Gov</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse text-center" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Αρχική</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="news.html">Νέα</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="faq.html">Ερωτήσεις</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="reserve.html">Ραντεβού Εμβολίου</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="stats.html">Στατιστικά</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Επικοινωνία</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!--Carousel-->
+  <div id="carouselIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <figure class="caption-3 mb-0 shadow-sm p-3 bg-white">
+          <img id="imgs" src="static/img/acro.jpeg" alt="" class="w-100">
+          <div class="carousel-caption capmove capfonts d-none d-md-block">
+            <h1>Ελληνική Δημοκρατία</h1>
+            <p>Προστατεύουμε το μέλλον...</p>
+          </div>
+        </figure>
+      </div>
+
+      <div class="carousel-item">
+        <figure class="caption-3 mb-0 shadow-sm p-3 bg-white">
+          <img id="imgs" src="static/img/fam.webp" alt="" class="w-100">
+          <div class="carousel-caption d-none d-md-block" style="bottom: 15%; left: 65%;">
+            <h2>Για εσάς και τις οικογένειές σας!</h2>
+          </div>
+        </figure>
+      </div>
+
+      <div class="carousel-item">
+        <figure class="caption-3 mb-0 shadow-sm p-3 bg-white">
+          <img id="imgs" src="static/img/vacc.jpg" alt="" class="w-100">
+        </figure>
+      </div>
+    </div>
+
+    <a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+  <!--Jumbotron-->
+  <div class="jumbotron jumbotron-fluid bg-primary" style="margin-top: 25px;">
+    <div class="container text-white">
+      <h1 class="display-4">Πύλη εμβολιασμού Covid-19</h1>
+      <p class="lead">
+        Σε αυτή την ιστοσελίδα θα βρείτε πληροφορίες σχετικά με τον Covid-19 και πληροφορίες
+        για την διαδικασία εμβολιασμού. Για περισσότερες πληροφορίες για την διαδικασία εμβολιασμού
+        πατήστε <u><a style="color: white;" href="faq.html">εδώ</a></u>.
+      </p>
+      <hr class="my-4">
+      <p>Αν θέλετε να κλείσετε ραντεβού για εμβολιασμό παρακαλώ μεταβήτε στην σελίδα για τα ραντεβού.</p>
+      <a class="btn btn-light btn-lg" href="reserve.html" role="button">Κλείστε Ραντεβού</a>
+    </div>
+  </div>
+
+  <div class="container" style="margin-bottom: 100px;">
+    <div class="row">
+      <div class="col-7">
+        <!--News Feed-->
+        <div class="list-group">
+          <h1><b>Πρόσφατα Νέα</b></h1>
+          <a href="news.html" class="list-group-item list-group-item-action">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1">Pfizer εγκρίνει δόσεις</h5>
+              <small>1 day ago</small>
+            </div>
+            <p class="mb-1">Η Pfizer εγρίνει νέες δόσεις του εμβολίου που θα καλύψουν κοντά στα 2.000.000 άτομα...</p>
+            <small>by Iliana Papageorgiou</small>
+          </a>
+          <a href="news.html" class="list-group-item list-group-item-action">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1">Νέες ηλικιακές ομάδες</h5>
+              <small class="text-muted">2 days ago</small>
+            </div>
+            <p class="mb-1">Απο 1 Ιουνίου προβλέψεις για εμβολιασμό της ηλικιακής ομάδας 20+ ανακοίνωσαν...</p>
+            <small class="text-muted">by Alexis Dimitriou</small>
+          </a>
+          <a href="news.html" class="list-group-item list-group-item-action">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1">Χαμηλά Κρούσματα</h5>
+              <small class="text-muted">3 days ago</small>
+            </div>
+            <p class="mb-1">Σύμφωνα με τις νέες αναφορές τα κρούσματα έχουν μειωθεί...</p>
+            <small class="text-muted">by Ilias Mamalakis</small>
+          </a>
+        </div>
+      </div>
+
+      <!--Videos-->
+      <div class="col-5" style="top: 55px;">
+        <h1><b>Βίντεο</b></h1>
+        <iframe width="400" height="315" src="https://www.youtube.com/embed/wNVTzr4WO0Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Footer -->
+  <footer class="footer bg-primary">
+    <div class="row justify-content-center">
+      <span style="font-weight: bold; color: white;">Ελληνική Δημοκρατία 2021 &#169;</span>
+    </div>
+  </footer>
+
+  <!--JS Bootstrap-->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

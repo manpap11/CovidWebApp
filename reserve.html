@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--jQuery-->
+    <script
+        src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        crossorigin="anonymous">
+    </script>
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="static/css/index.css">
+    <script src="rez.js"></script>
+    <title>Ραντεβού</title>
+</head>
+<body onload="randDate()" style="text-align: center;">
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="index.html"><img class="logo" src="static/img/gov.png"> Vaccine-Gov</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse text-center" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Αρχική</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="news.html">Νέα</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="faq.html">Ερωτήσεις</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="reserve.html">Ραντεβού Εμβολίου</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="stats.html">Στατιστικά</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html">Επικοινωνία</a>
+            </li>
+            </ul>
+        </div>
+    </nav>
+
+    <br>
+    <h1>Κλείστε ραντεβού για εμβόλιο</h1>
+    <form onsubmit="reserve(); return false" method="POST" style="display: inline-block;">
+        <label for="fname">Όνομα:</label>
+        <input type="text" id="fname" required>
+        <br><br>
+
+        <label for="lname">Επίθετο:</label>
+        <input type="text" id="lname" required>
+        <br><br>
+
+        <label for="phone">Τηλέφωνο:</label>
+        <input type="text" id="phone" required>
+        <br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+        <br><br>
+
+        <label for="gen">Φύλο:</label>
+        <div id="gen">
+            <label for="r1">Άντρας</label>
+            <input type="radio" id="r1" name="radiobtn" value="0" checked>
+
+            <label for="r2">Γυναίκα</label>
+            <input type="radio" id="r2" name="radiobtn" value="1">
+        </div>
+        <br>
+
+        <label for="amka">AMKA:</label>
+        <input type="text" id="amka" required>
+        <br><br>
+
+        <div>
+            <label for="date">Η ημερομηνία εμβολιασμού είναι: </label>
+            <input id="date" type="text" placeholder="mm/dd/yyyy" required>
+            <br>
+            <small class="text-muted">
+                (Μπορείτε να αλλάξετε την ημερομηνία συμπληρώνοντας την φόρμα με την ημερομηνία που
+                θέλετε)
+            </small>
+        </div>
+        <br><br>
+
+        <a href="index.html" class="btn btn-danger">Ακύρωση</a>
+        <div class="divider"></div>
+        <button class="btn btn-primary">Οριστική υποβολή</button>
+    </form>
+
+    
+    <!-- Footer -->
+    <div class="row fixed">
+        <footer class="footer otherFoot bg-primary">
+            <div class="row justify-content-center">
+            <span style="font-weight: bold; color: white;">Ελληνική Δημοκρατία 2021 &#169;</span>
+            </div>
+        </footer>
+    </div>
+
+    <!--JS Bootstrap-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
